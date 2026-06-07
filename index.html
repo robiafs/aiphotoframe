@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Photo Framer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidebar">
+
+<h2>Photo Framer</h2>
+
+<input type="file" id="upload">
+
+<h3>Frames</h3>
+
+<div class="frames">
+<img src="frames/frame1.png" class="frame-thumb active">
+<img src="frames/frame2.png" class="frame-thumb">
+<img src="frames/frame3.png" class="frame-thumb">
+</div>
+
+<label>Zoom</label>
+<input type="range" id="zoom" min="50" max="300" value="100">
+
+<label>Rotate</label>
+<input type="range" id="rotate" min="-180" max="180" value="0">
+
+<label>Frame Opacity</label>
+<input type="range" id="opacity" min="0" max="100" value="100">
+
+<button id="download">Download PNG</button>
+
+</div>
+
+<div class="canvas-area">
+<canvas id="canvas" width="1080" height="1080"></canvas>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
