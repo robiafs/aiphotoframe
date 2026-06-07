@@ -15,7 +15,7 @@ let dragging = false;
 let startX;
 let startY;
 
-frame.src = "frames/frame1.png";
+frame.src = "frame1.png";
 
 document.getElementById("upload").addEventListener("change", e=>{
 
